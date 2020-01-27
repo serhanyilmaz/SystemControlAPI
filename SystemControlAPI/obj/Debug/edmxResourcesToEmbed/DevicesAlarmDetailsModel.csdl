@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SystemControlModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DevicesAlarmDetailsEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="DevicesAlarmDetails" ReturnType="Collection(SystemControlModel.DevicesAlarmDetails_Result)">
+      <Parameter Name="did" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="DevicesAlarmDetails_Result">
+    <Property Type="Int32" Name="DeviceID" Nullable="false" />
+    <Property Type="String" Name="AlarmName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="AlarmDescription" Nullable="false" MaxLength="100" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
+  </ComplexType>
+</Schema>

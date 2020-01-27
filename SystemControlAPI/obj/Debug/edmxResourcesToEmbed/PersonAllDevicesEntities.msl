@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SystemControlModelStoreContainer" CdmEntityContainer="PersonAllDevicesEntities">
+    <FunctionImportMapping FunctionImportName="PersonAllDevices" FunctionName="SystemControlModel.Store.PersonAllDevices">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SystemControlModel.PersonAllDevices_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="DeviceState" ColumnName="DeviceState" />
+          <ScalarProperty Name="DeviceTemperature" ColumnName="DeviceTemperature" />
+          <ScalarProperty Name="AlarmName" ColumnName="AlarmName" />
+          <ScalarProperty Name="BenchName" ColumnName="BenchName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
